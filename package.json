@@ -1,0 +1,42 @@
+{
+  "name": "ajuda-inicializacao",
+  "version": "1.0.10",
+  "description": "Ajuda no redirecionamento do sentinela para aplicação",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "author": "Rodrigo Oliveira",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "query-string": "^6.2.0",
+    "react-cookies": "^0.1.1"
+  }
+}
